@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="assets/abenson_logo.png" />
+    <title>Abenson Assessment by Jaime Contemprato</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- POPPINS FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <header>
+    <div class="desktop-header">
+      <div class="desktop-top-menu">
+        <p class="poppins-regular">
+          Our Shops <img src="assets/header/drop-down-icon.png" />
+        </p>
+        <div class="desktop-top-menu-right poppins-regular">
+          <a href="">Store Locator</a>
+          <a href="">Order Tracker</a>
+          <a href="">Viber Chat</a>
+          <a href="">
+            Download Abenson App <img src="assets/header/drop-down-icon.png" />
+          </a>
+        </div>
+      </div>
+      <div class="desktop-navbar">
+        <div class="header-container">
+          <img
+            src="/assets/header/abenson-logo.png"
+            alt="Abenson Logo"
+            class="header-logo"
+          />
+          <div class="header-input-container">
+            <input
+              type="text"
+              class="header-input poppins-regular"
+              placeholder="Summer Promo!"
+              onfocus="ChangeSearchIcon()"
+              onfocusout="ChangeSearchIcon()"
+            />
+            <img
+              src="assets/header/search-icon.png"
+              alt="Search Icon"
+              class="header-input-search-icon"
+              id="header-input-search-icon"
+            />
+          </div>
+
+          <div class="desktop-navbar-right">
+            <div class="desktop-navbar-account">
+              <a href="">
+                <img
+                  src="assets/header/account-icon.png"
+                  alt="Account Icon"
+                  width="20px"
+                  height="24px"
+                />
+                <h1 class="poppins-semibold">Login</h1>
+              </a>
+            </div>
+
+            <a href="">
+              <div class="desktop-navbar-cart">
+                <div class="shopping-cart-container">
+                  <div class="cart-items">
+                    <p class="roboto-bold">0</p>
+                  </div>
+                  <button class="shopping-cart-btn-desktop"></button>
+                </div>
+                <div class="shopping-cart-text">
+                  <h2 class="poppins-semibold">Cart</h2>
+                  <p class="poppins-regular">₱999,999</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="desktop-bottom-menu poppins-regular">
+        <a href=""> Featured </a>
+        <a href=""> <img src="assets/header/deals-icon.png" /> Deals </a>
+        <a href=""> Mobile </a>
+        <a href=""> Gadgets </a>
+        <a href=""> TV </a>
+        <a href=""> Aircon </a>
+        <a href=""> Home Appliance </a>
+        <a href=""> Small Appliance </a>
+        <a href=""> Hardware </a>
+        <a href=""> Furniture </a>
+        <a href=""> Services </a>
+      </div>
+    </div>
+    <div class="mobile-navbar">
+      <div class="header-container">
+        <img
+          src="/assets/header/abenson-logo.png"
+          alt="Abenson Logo"
+          class="header-logo"
+        />
+        <div class="header-input-container">
+          <input
+            type="text"
+            class="header-input poppins-regular"
+            placeholder="Summer Promo!"
+            onfocus="ChangeSearchIcon()"
+            onfocusout="ChangeSearchIcon()"
+          />
+          <img
+            src="assets/header/search-icon.png"
+            alt="Search Icon"
+            class="header-input-search-icon"
+            id="header-input-search-icon"
+          />
+        </div>
+
+        <div class="shopping-cart-container">
+          <div class="cart-items">
+            <p class="roboto-bold">0</p>
+          </div>
+          <a href="">
+            <button class="shopping-cart-btn"></button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <main>
+      <!-- HERO ELEMENTS -->
+      <section class="hero-container fade-in">
+        <h1 class="sr-only">Hero Section</h1>
+        <div class="hero-content-container">
+          <h1 class="poppins-semibold">Awesome at Abenson</h1>
+          <p class="poppins-regular">
+            We’re here to make people happy through technology. Be a part of a
+            high performance team and grow your career with us.
+          </p>
+          <a href="#featured-jobs">
+            <button class="poppins-medium hero-openings-btn">Openings</button>
+          </a>
+          <a href="#submit-resume">
+            <button class="poppins-medium hero-submit-btn">Submit</button>
+          </a>
+        </div>
+      </section>
+
+      <!-- ABOUT US ELEMENTS -->
+      <section class="about-us-container fade-in">
+        <h1 class="poppins-semibold">About us</h1>
+        <p class="poppins-regular">
+          Abenson group is a trusted retailer in the Philippines engaged in
+          distribution of appliance, gadgets, and furniture for over 50 years.
+          Our growing network of 140+ stores nationwide and online superstore
+          abenson.com provides convenient access to a wide range of products and
+          services
+        </p>
+      </section>
+
+      <!-- VALUES ELEMENTS -->
+      <section class="values-container fade-in">
+        <h1 class="sr-only">Values Section</h1>
+        <div class="values-cards-container" id="values-container">
+          <div class="value-card mission-card">
+            <h2 class="poppins-medium">Mission</h2>
+            <p class="poppins-semibold">
+              At Abenson, our mission is to create JOY by bringing ‘Good Life’
+              to every Filipino home.
+            </p>
+          </div>
+          <div class="value-card vision-card">
+            <h2 class="poppins-medium">Vision</h2>
+            <p class="poppins-semibold">
+              Happy Customer, <br />
+              Great People, <br />
+              Great Company.
+            </p>
+          </div>
+          <div class="value-card core-values-card">
+            <h2 class="poppins-medium">Core Values</h2>
+            <p class="poppins-semibold">
+              Care for Customers, Leadership by All, <br />
+              Win-Win-Win!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY JOIN ELEMENTS -->
+      <section class="why-join-container fade-in">
+        <h1 class="poppins-semibold">Why join us?</h1>
+        <div class="why-join-cards-container">
+          <div class="why-join-card">
+            <img
+              src="assets/why-join-us/1-appliances-img.png"
+              alt="#1 in Applications"
+            />
+            <h2 class="poppins-semibold">#1 in Applications</h2>
+            <p class="poppins-regular">
+              Grow your career with the Leader. Let’s bring happiness together
+              through technology.
+            </p>
+          </div>
+          <div class="why-join-card">
+            <img
+              src="assets/why-join-us/awesome-comp-img.png"
+              alt="Awesome Compensation and Benefits"
+            />
+            <h2 class="poppins-semibold mobile">Awesome Benefits</h2>
+            <h2 class="poppins-semibold desktop">
+              Awesome Compensation and Benefits
+            </h2>
+            <p class="poppins-regular">
+              Enjoy good compensation package and exciting benefits.
+            </p>
+          </div>
+          <div class="why-join-card">
+            <img
+              src="assets/why-join-us/strong-values-img.png"
+              alt="Strong Values Culture"
+            />
+            <h2 class="poppins-semibold">Strong Values Culture</h2>
+            <p class="poppins-regular">
+              Values are important to us. Service and Leadership guides our
+              culture.
+            </p>
+          </div>
+          <div class="why-join-card">
+            <img
+              src="assets/why-join-us/leader-digital-img.png"
+              alt="A Leader in Digital"
+            />
+            <h2 class="poppins-semibold">A Leader in Digital</h2>
+            <p class="poppins-regular">
+              Abenson.com is the number one Filipino eRetailer. We are a winning
+              team that continues to innovate.
+            </p>
+          </div>
+          <div class="why-join-card">
+            <img
+              src="assets/why-join-us/lifelong-learning-img.png"
+              alt="Lifelong Learning"
+            />
+            <h2 class="poppins-semibold">Lifelong Learning</h2>
+            <p class="poppins-regular">
+              We believe that if you grow, we grow. We have an industry leading
+              career growth and retention rates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEET TEAM ELEMENTS -->
+      <section class="meet-teams-container fade-in">
+        <h1 class="poppins-semibold">Meet our teams</h1>
+        <button class="meet-teams-btn left-btn" onclick="MeetTeamsMoveLeft()">
+          <img
+            src="assets/meet-our-team/left-icon.png"
+            alt="Left Arrow Button"
+          />
+        </button>
+        <button class="meet-teams-btn right-btn" onclick="MeetTeamsMoveRight()">
+          <img
+            src="assets/meet-our-team/right-icon.png"
+            alt="Right Arrow Button"
+          />
+        </button>
+
+        <div class="meet-teams-cards-container" id="teams-cards-container">
+          <!-- UX/UI Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front ux-ui-team-card">
+                <img src="assets/meet-our-team/ui-ux-img.png" alt="UX/UI" />
+                <h2 class="poppins-bold">UX/UI</h2>
+              </div>
+              <div class="flip-card-back ux-ui-team-card-hover">
+                <h2 class="poppins-bold">UX/UI</h2>
+                <p class="poppins-regular">
+                  Crafting visually stunning, user-friendly designs from
+                  wireframes to prototypes, ensuring our website and app dazzle
+                  and delight.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Rewards Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front rewards-team-card">
+                <img
+                  src="assets/meet-our-team/rewards-img.png"
+                  alt="Mobile App & Loyalty"
+                />
+                <h2 class="poppins-bold">Mobile App & Loyalty</h2>
+              </div>
+              <div class="flip-card-back rewards-team-card-hover">
+                <h2 class="poppins-bold">Mobile App & Loyalty</h2>
+                <p class="poppins-regular">
+                  Managing our awesome mobile app and loyalty program to keep
+                  you coming back for more!
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Marketing Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front marketing-team-card">
+                <img
+                  src="assets/meet-our-team/marketing-img.png"
+                  alt="Digital Marketing"
+                />
+                <h2 class="poppins-bold">Digital Marketing</h2>
+              </div>
+              <div class="flip-card-back marketing-team-card-hover">
+                <h2 class="poppins-bold">Digital Marketing</h2>
+                <p class="poppins-regular">
+                  Conceptualizing campaigns, creating content, shooting fun
+                  videos, and optimizing paid media across Facebook, Instagram,
+                  TikTok, and more!
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Digital Devt. Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front digital-dev-team-card">
+                <img
+                  src="assets/meet-our-team/digital-dev-img.png"
+                  alt="Digital Development"
+                />
+                <h2 class="poppins-bold">Digital Development</h2>
+              </div>
+              <div class="flip-card-back digital-dev-team-card-hover">
+                <h2 class="poppins-bold">Digital Development</h2>
+                <p class="poppins-regular">
+                  Mastering cutting-edge software, eCommerce innovation, and AWS
+                  cloud for stellar online experiences.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Smile Serve Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front smile-serve-team-card">
+                <img
+                  src="assets/meet-our-team/smile-serve-img.png"
+                  alt="Smile Serve (Logistics)"
+                />
+                <h2 class="poppins-bold">Smile Serve (Logistics)</h2>
+              </div>
+              <div class="flip-card-back smile-serve-team-card-hover">
+                <h2 class="poppins-bold">Smile Serve (Logistics)</h2>
+                <p class="poppins-regular">
+                  Delivering smiles with timely deliveries and top-notch
+                  service, making every delivery a happy moment.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Systems Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front systems-team-card">
+                <img
+                  src="assets/meet-our-team/systems-img.png"
+                  alt="Systems Development"
+                />
+                <h2 class="poppins-bold">Systems Development</h2>
+              </div>
+              <div class="flip-card-back systems-team-card-hover">
+                <h2 class="poppins-bold">Systems Development</h2>
+                <p class="poppins-regular">
+                  Innovating and automating omnichannel projects for seamless
+                  and efficient solutions.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- SOL Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front sol-team-card">
+                <img
+                  src="assets/meet-our-team/sol-img.png"
+                  alt="Shop Online Operations"
+                />
+                <h2 class="poppins-bold">Shop Online Operations</h2>
+              </div>
+              <div class="flip-card-back sol-team-card-hover">
+                <h2 class="poppins-bold">Shop Online Operations</h2>
+                <p class="poppins-regular">
+                  Managing order fulfillment, handling inquiries, and converting
+                  sales through our dedicated online Personal Shoppers.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Digital Prod Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front digital-products-team-card">
+                <img
+                  src="assets/meet-our-team/digital-products-img.png"
+                  alt="Digital Products"
+                />
+                <h2 class="poppins-bold">Digital Products</h2>
+              </div>
+              <div class="flip-card-back digital-products-team-card-hover">
+                <h2 class="poppins-bold">Digital Products</h2>
+                <p class="poppins-regular">
+                  Ensuring accurate products, pricing, and promos, while
+                  expanding categories and brands to help customers decide.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Data Card -->
+          <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front data-team-card">
+                <img src="assets/meet-our-team/data-img.png" alt="Data" />
+                <h2 class="poppins-bold">Data</h2>
+              </div>
+              <div class="flip-card-back data-team-card-hover">
+                <h2 class="poppins-bold">Data</h2>
+                <p class="poppins-regular">
+                  Turning data into insights and decisions, making sense of
+                  numbers for smarter choices.
+                </p>
+                <a href="#featured-jobs">
+                  <button class="poppins-semibold">Check for openings</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED JOBS ELEMENTS -->
+      <section class="featured-jobs-container fade-in" id="featured-jobs">
+        <h1 class="poppins-semibold">Featured job openings</h1>
+        <div class="job-listing-container" id="job-listing-container">
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">Corporate Sales Specialist</h2>
+              <p class="poppins-regular">Quezon City</p>
+              <p class="poppins-regular">Onsite</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">IT Project/Systems Manager</h2>
+              <p class="poppins-regular">Quezon City</p>
+              <p class="poppins-regular">Hybrid</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">Store Supervisor</h2>
+              <p class="poppins-regular">Bacolod</p>
+              <p class="poppins-regular">Onsite</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">Store Supervisor</h2>
+              <p class="poppins-regular">Cebu</p>
+              <p class="poppins-regular">Onsite</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">Store Supervisor</h2>
+              <p class="poppins-regular">Iloilo</p>
+              <p class="poppins-regular">Onsite</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="job-listing-card">
+              <h2 class="poppins-semibold">Store Supervisor</h2>
+              <p class="poppins-regular">Laguna</p>
+              <p class="poppins-regular">Onsite</p>
+            </div>
+          </a>
+        </div>
+        <button
+          class="job-postings-btn poppins-medium mobile"
+          onclick="JobOpenings()"
+          id="job-postings-btn"
+        >
+          See All
+        </button>
+
+        <button
+          class="job-postings-btn poppins-medium desktop"
+          id="job-postings-btn"
+        >
+          See All
+        </button>
+      </section>
+
+      <!-- SUBMIT RESUME ELEMENTS -->
+      <section class="submit-resume-container fade-in" id="submit-resume">
+        <h1 class="poppins-semibold">Not on the List?</h1>
+        <p class="poppins-regular">Send us your resume here!</p>
+
+        <form
+          name="resume-form"
+          class="submit-resume-form"
+          action="javascript:validateResumeForm()"
+        >
+          <input
+            name="resume-name"
+            type="text"
+            class="form-input-text input-name poppins-regular"
+            id="form-name-input"
+            autocomplete="off"
+            placeholder="Jane Doe"
+          />
+          <label
+            for="form-name-input"
+            class="form-name-label poppins-semibold"
+            id="form-name-input-label"
+          >
+            Name
+          </label>
+          <p class="input-name-error poppins-regular" id="name-error">
+            Invalid Name
+          </p>
+
+          <input
+            name="resume-email"
+            type="text"
+            class="form-input-text input-email poppins-regular"
+            id="form-email-input"
+            autocomplete="off"
+            placeholder="email@example.com"
+          />
+          <label
+            for="form-email-input"
+            class="form-email-label poppins-semibold"
+            id="form-email-input-label"
+          >
+            Email
+          </label>
+          <p class="input-email-error poppins-regular" id="email-error">
+            Invalid Email
+          </p>
+
+          <div class="form-input-file-container">
+            <p class="form-input-file-label poppins-semibold">Attach Resume</p>
+            <p class="form-input-file-output poppins-regular" id="file-output">
+              No file selected
+            </p>
+            <label
+              for="form-resume-input"
+              class="form-input-file-btn poppins-medium"
+              id="form-resume-input-label"
+            >
+              Browse Files
+            </label>
+            <input
+              name="resume-file"
+              type="file"
+              class="form-input-file"
+              id="form-resume-input"
+            />
+          </div>
+          <p class="input-file-error poppins-regular" id="file-error">
+            No File Selected
+          </p>
+
+          <button class="form-input-btn poppins-medium">Submit</button>
+        </form>
+      </section>
+
+      <!-- FOLLOW US ELEMENTS -->
+      <section class="follow-us-container fade-in">
+        <h1 class="poppins-semibold">Follow us</h1>
+        <div class="follow-us-links-container">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img
+              src="assets/follow-us/facebook-icon.png"
+              alt="Facebook Icon"
+              class="follow-us-icons"
+            />
+            <p class="poppins-regular">
+              Facebook <br />
+              Abenson Careers
+            </p>
+          </a>
+          <a href="https://www.jobstreet.com/" target="_blank">
+            <img
+              src="assets/follow-us/jobstreet-icon.png"
+              alt="Jobstreet Icon"
+              class="follow-us-icons"
+            />
+            <p class="poppins-regular">
+              Jobstreet <br />
+              Abenson Ventures Inc.
+            </p>
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank">
+            <img
+              src="assets/follow-us/linkedin-icon.png"
+              alt="LinkedIn Icon"
+              class="follow-us-icons"
+            />
+            <p class="poppins-regular">
+              LinkedIn <br />
+              Abenson
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <footer>
+    <section class="footer-content">
+      <h1 class="sr-only">Footer Top Contents</h1>
+
+      <div class="footer-content-1">
+        <h1 class="poppins-semibold">Get Special Offers from Abenson</h1>
+        <p class="poppins-regular">
+          Join our subscription and get P100 Off on your first online order!
+        </p>
+        <form>
+          <input
+            type="email"
+            required
+            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+            autocomplete="off"
+            placeholder="Enter your Email Address"
+            class="poppins-regular"
+          />
+          <button class="poppins-semibold">Subscribe</button>
+        </form>
+        <a href="">
+          <img src="assets/footer/placeholder.png" class="footer-banner-img" />
+        </a>
+      </div>
+
+      <div class="footer-content-2">
+        <div class="footer-content-links">
+          <h2 class="poppins-semibold">Discover</h2>
+          <a href="" class="poppins-regular"> Why Abenson </a>
+          <a href="" class="poppins-regular"> Awesomeness Blog </a>
+          <a href="" class="poppins-regular"> Buyer’s Guide </a>
+        </div>
+        <div class="footer-content-links">
+          <h2 class="poppins-semibold">Our Services</h2>
+          <a href="" class="poppins-regular"> Click and Collect </a>
+          <a href="" class="poppins-regular"> Business Solutions </a>
+          <a href="" class="poppins-regular"> Appliance Padala </a>
+          <a href="" class="poppins-regular"> New Home Solutions </a>
+          <a href="" class="poppins-regular"> Gift Registry </a>
+          <a href="" class="poppins-regular"> Easy Ink </a>
+        </div>
+      </div>
+
+      <div class="footer-content-3">
+        <div class="footer-content-links">
+          <h2 class="poppins-semibold">Support</h2>
+          <a href="" class="poppins-regular"> Store Locator </a>
+          <a href="" class="poppins-regular"> Order Tracker </a>
+          <a href="" class="poppins-regular"> Safety Advisory </a>
+        </div>
+        <div class="footer-content-links">
+          <h2 class="poppins-semibold">Payment Methods</h2>
+          <a href="" class="a-img">
+            <div>
+              <img src="assets/footer/Visa.png" alt="Visa Payment" />
+              <img
+                src="assets/footer/Mastercard.png"
+                alt="Mastercard Payment"
+              />
+              <img src="assets/footer/JCB.png" alt="JCB Payment" />
+              <img
+                src="assets/footer/AmericanExpress.png"
+                alt="American Express Payment"
+              />
+              <img src="assets/footer/PayPal.png" alt="PayPal Payment" />
+              <img src="assets/footer/BDO.png" alt="BDO Payment" />
+              <img src="assets/footer/BPI.png" alt="BPI Payment" />
+              <img src="assets/footer/Metrobank.png" alt="Metrobank Payment" />
+              <img src="assets/footer/HSBC.png" alt="HSBC Payment" />
+              <img src="assets/footer/RCBC.png" alt="RCBC Payment" />
+              <img src="assets/footer/Grabpay.png" alt="Grab Pay Payment" />
+              <img src="assets/footer/Maya.png" alt="Maya Payment" />
+              <img src="assets/footer/Gcash.png" alt="GCash Payment" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-content-4">
+        <h2 class="poppins-semibold">Connect with Us</h2>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="assets/footer/fb-icon.png" alt="Facebook Connect" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="assets/footer/youtube-icon.png" alt="Youtube Connect" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img
+              src="assets/footer/instagram-icon.png"
+              alt="Instagram Connect"
+            />
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img src="assets/footer/tiktok-icon.png" alt="Tiktok Connect" />
+          </a>
+          <a href="https://www.viber.com/" target="_blank">
+            <img src="assets/footer/viber-icon.png" alt="Viber Connect" />
+          </a>
+        </div>
+
+        <hr />
+
+        <p class="poppins-regular">Online Personal Shopper</p>
+        <br />
+        <div class="footer-hotline">
+          <img src="assets/footer/Hotline.png" alt="Hotline" />
+          <p class="poppins-regular">(02) 8811-8811</p>
+        </div>
+        <div class="footer-hotline">
+          <img src="assets/footer/Hotline.png" alt="Hotline" />
+          <p class="poppins-regular">(02) 8811-8811</p>
+        </div>
+        <div class="footer-hotline-hidden" id="hidden-hotline">
+          <div class="footer-hotline">
+            <img src="assets/footer/Hotline.png" alt="Hotline" />
+            <p class="poppins-regular">(02) 8811-8811</p>
+          </div>
+          <div class="footer-hotline">
+            <img src="assets/footer/Hotline.png" alt="Hotline" />
+            <p class="poppins-regular">(02) 8811-8811</p>
+          </div>
+          <p class="poppins-regular">Open at 8am-6pm daily</p>
+        </div>
+        <button
+          class="poppins-regular"
+          onclick="ShowHiddenHotline()"
+          id="hotline-btn"
+        >
+          See More
+        </button>
+
+        <hr />
+
+        <a href="" class="footer-instore-link">
+          <p class="poppins-regular">In-Store Personal Shopper</p>
+          <img src="assets/footer/link-icon.png" alt="Link" />
+        </a>
+
+        <hr />
+
+        <div class="footer-overseas">
+          <button class="poppins-regular" onclick="ShowHiddenOverseas()">
+            Overseas Hotlines
+            <span id="footer-overseas-dropdown">
+              <img
+                src="assets/footer/dropdown-icon.png"
+                alt="Dropdown"
+                id="overseas-dropdown"
+              />
+            </span>
+          </button>
+          <div
+            class="footer-overseas-hidden poppins-regular"
+            id="footer-overseas-hidden"
+          >
+            US: <a href=""><span>+1 213 758 5050</span></a> <br />
+            Singapore: <a href=""><span>+65 3105 2078</span></a> <br />
+            Australia: <a href=""><span>+61 1800 575 026</span></a> <br />
+            AE: <a href=""><span>+971 800 012 0104</span></a> <br />
+            Italy: <a href=""><span>+39 800 725 979</span></a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-business-solutions">
+          <button class="poppins-regular" onclick="ShowHiddenBusiness()">
+            Business Solutions
+            <span>
+              <img
+                src="assets/footer/dropdown-icon.png"
+                alt="Dropdown"
+                id="footer-business-dropdown"
+              />
+            </span>
+          </button>
+          <div class="footer-business-hidden" id="footer-business-hidden">
+            <img src="assets/footer/Hotline.png" />
+            <a href=""><span class="poppins-regular">(02) 8248-3233</span></a>
+            <br />
+            <img src="assets/footer/Hotline.png" />
+            <a href=""><span class="poppins-regular">09989587101</span></a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-customer-care">
+          <button class="poppins-regular" onclick="ShowHiddenCustomer()">
+            Customer Care
+            <span>
+              <img
+                src="assets/footer/dropdown-icon.png"
+                alt="Dropdown"
+                id="footer-customer-dropdown"
+              />
+            </span>
+          </button>
+          <div class="footer-customer-hidden" id="footer-customer-hidden">
+            <img src="assets/footer/Hotline.png" />
+            <a href=""><span class="poppins-regular">(02) 8921-0888</span></a>
+            <br />
+            <img src="assets/footer/Hotline.png" />
+            <a href=""><span class="poppins-regular">09209328523</span></a>
+            <br />
+            <img src="assets/footer/Hotline.png" />
+            <a href=""
+              ><span class="poppins-regular"
+                >customerservice@abenson.com</span
+              ></a
+            >
+            <br />
+            <img src="assets/footer/Hotline.png" />
+            <a href=""
+              ><span class="poppins-regular">Customer Inquiry Form</span></a
+            >
+          </div>
+        </div>
+
+        <hr />
+      </div>
+    </section>
+
+    <hr />
+
+    <section class="footer-copyright">
+      <h1 class="sr-only">Foot Bottom Contents</h1>
+
+      <div class="footer-copyright-buttons poppins-regular">
+        <a href=""> Privacy Policy </a>
+        <a href=""> Terms of Use </a>
+        <a href=""> Warranty </a>
+      </div>
+
+      <div>
+        <p class="footer-copyright-text poppins-regular">
+          Copyright © 2022 Abenson Ventures Inc. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer-copyright-buttons poppins-regular">
+        <a href=""> FAQ </a>
+        <a href=""> Feedback </a>
+        <a href=""> Careers </a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</html>
