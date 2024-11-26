@@ -37,10 +37,15 @@ Built with HTML, CSS and JavaScript, this project utilizes mobile-first workflow
 
 Instructions on how to run the web application
 
-1. Clone [Repository](https://github.com/Jaime-Cont/abenson-technical-assessment)
+1. Download ZIP File of [Repository](https://github.com/Jaime-Cont/abenson-technical-assessment)
+2. Extract Files
+3. Run index.html file to view web application
+
+- You can also view the project hosted on [GitHub Pages](https://jaime-cont.github.io/abenson-technical-assessment/)
 
 ## Notes
 
 - I've made css root variables for easier changing of primary colors, semantic colors, bg colors, card colors, etc..
 - I used JavaScript for the functionality of some elements, e.g. movement of cards, show more and less buttons, changing of specific elements when mobile vs desktop.
 - Added comments to places where I deemed necessary for better code readability and to have the ability to jump to specific parts in the files when needing maintenance or rework.
+- Made Tablet/Ipad Responsiveness alongside Mobile and Desktop
